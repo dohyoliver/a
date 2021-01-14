@@ -1,58 +1,76 @@
+
 body {
-    background-image: url("img/hatter.jpg");
-    margin: 0;
+  background-color:lightgreen ;
+}
+.oszlop1 {
+  text-align: center;
+  
+}
+
+.jobbra {
+margin-left: 600px;
+height: 250px;
+width:300px ;
+}
+.sarga {
+  height: 200px;
+  width: 0%;
+  background-color:yellow;
+  margin-left: 300px;
+}
+a {
+color:rgba(128, 128, 128, 0.774);
+text-decoration: none;
+}
+  
+  p {
+    text-align: justify;
+    padding-right: 3%;
+  }
+
+.pulik {
+  display: block;
+  margin: 0 auto;
+}
+.tabla  {
+
+  
+  width: 300px;
+  margin:auto;
+  
+}
+h2 {
+  color:yellow;
+}
+.nagybetus {
+  text-transform:uppercase;
 }
 
 
-.Q {
-    background-image: url("img/fejlec.jpg");
-    width: 770px;
-    height: 114px;
-    margin: 0 auto;
-    text-align: center;
+.jobbkep {
+  width:150px;
+ height:100px;
+ float: right;
 }
-.A {
-   max-width: 60%;
-    height: 250px;
-    margin-top: 500px;
-    margin-bottom: 150px;
-    margin-right: 250px;
-    margin-left: 435px;
+hr {
+  height:2px;
+    border-width:0;
+    color:yellow;
+    background-color:yellow
 }
-
-
-.E {
-    background-image: url("img/tartalomkep.jpg");
-background-repeat: no-repeat;
-    background-position: top right ;
-width: 560px ;
-height: 300px;
-background-color: #FFFFFF;
-color:#484848;
-}
-table{
-    margin: 0 auto;
-    background-color: #FFFFFF;
+.kep {
+  width:370px;
+ height:350px;
+ margin:auto;
+ display:block
 
 }
-.W {
-background-color:#E8E8E8 ;
-color:#800000 ;
-border: #E8E8E8 solid 10px;
-padding: -5px;
-}
-.R {
-    background-color: #FFFFFF;
-}
-.T {
 
-    margin-left: 50px;
+.kistabla  tr td {
+
+width: 750px;
 }
-.W > b > p{
-    margin-top: -200px;
-     
+.tabla > tr > td:not(:first-child) {
+  width:320px;
 }
-.Q > div {
-    position: relative;
-    top: 40px;
-}
+
