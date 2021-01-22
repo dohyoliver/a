@@ -35,6 +35,7 @@ width:350px;
  height:230px;
 float:right;
 box-shadow: 3px 4px 4px #1D1D4E  ;
+margin-right: 40px;
 }
 .fejsor{ 
 background-color: #1D1D4E;
@@ -56,8 +57,9 @@ table {
 }
 td {
   color:white;
-  text-align: center;
+  text-align: left;
   border: 1px solid #1D1D4E;
+  font-style: italic;
   
 }
 a:link{
@@ -75,4 +77,11 @@ hr {
   height: 2px;
   color:#1D1D4E;
   margin-left: 75px;
+  margin-right: 75px;
+}
+.ja {
+text-align: right;
+font-style: normal;
+font-weight: bold;
+padding-right: 6px;
 }
