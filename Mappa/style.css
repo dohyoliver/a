@@ -1,116 +1,129 @@
-body {
-background-color:dimgrey;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
+   /* * *  Külsõ keret formázása  * * */
+
+
+   body
+   {
+   font-family       :  Verdana             ;
+   text-align        :  center              ;
+   }
+
+   div#keret
+   {
+   width             : 1116px               ;
+   }
+
+   div#keret h1
+   {
+   margin-bottom     :  0                   ;
+   font-size         : 24px                 ;
+   color             : #AA0000              ;
+   }
+
+   div#keret h2
+   {
+   margin            :  8px 0 24px 0        ;
+   font-size         : 18px                 ;
+   color             : #550000              ;
+   }
+
+   a
+   {
+   text-decoration   :  none                ;
+   }
+
+   .ful
+   {
+   float             :  left                ;
+   width             :  120px               ;
+   height            :   36px               ;
+   margin            :  0 2px               ;
+   border-radius     :  16px 16px 0 0       ;
+   text-align        :  center              ;
+   line-height       :  36px                ;
+   vertical-align    :  middle              ;
+   font-weight       :  bold                ;
+   font-size         :  14px                ;
+   color             :  #FFF                ;
+   }
+
+   iframe
+   {
+   border-radius     :  0 0 0 32px          ;  webkit-border-radius: 0 0 0 32px ;  -moz-border-radius: 0 0 0 32px ;
+   }
 
 
 
-h1 {
-margin:auto;
-display: block;
-width:200px;
+/* * *  Belsõ keret formázása  * * */
 
-}
-#A {
-height: 140px;
-width:200px;
-float: right;
-border:5px solid blue;
-margin-right: 20px;
-margin-left: 15px;
-border-style: inset;
 
-}
-.B {
-width: 960px;
-background-color:lightblue;
-margin:  0 auto;
-display:block;
-padding:30px;
-height:2750px;
+   body#belso
+   {
+   margin            :  24px 36px 72px 36px ;
+   padding           :  0px                 ;
+   text-align        :  left                ;
+   font-size         :  12px                ;
+   color             :  #FFF                ;
+   }
 
-}
-p {
-  text-align: justify;
-  margin-right: 30px;
-  
- 
-}
-h2 {
-  margin-right: 40%;
-  text-align: left;
-  border-color: darkblue;
-  border-style: solid;
-  text-transform:uppercase;
-  border-top: 2px darkblue solid;
-  border-left: none;
-  border-width: 7px;
-  border-bottom: 2px darkblue dotted;
-  border-right: none;
-  color: darkblue;
- 
-}
-  
+   body#belso h1
+   {
+   margin            :  24px                ;
+   text-align        :  center              ;
+   font-size         :  18px                ;
+   }
+
+   body#belso h2
+   {
+   text-align        :  center              ;
+   font-size         :  24px                ;
+   }
 
 
 
+/* * *  Belsõ keret: lista és képek-bekezdések formázása  * * */
 
-img {
-margin-left: 90px;
 
-}
-ul {
-text-align: justify;
-list-style-image: url("img/kukac.png");
-margin-left: 70px;
-margin-right: 30px;
-}
-hr{
-border: 6px solid blue;
-border-style: double;
+   body#belso div#lista ul
+   {
+   text-align        :  justify             ;
+   margin            :  24px 72px 48px 48px ;
+   font-weight       :  bold                ; 
+   }
 
-}
-#Z{
-  float: left;
-  margin: 0 auto;
-  display: block;
-  height: 180px;
-width:170px;
+   body#belso div#lista ul li
+   {
+   margin-bottom     :    8px               ; 
+   }
 
-    border: 7px darkblue solid;
-    
-    margin-right: 10px;
-    border-style: inset;
-}
-#Y {
+   body#belso div#lista div:nth-child(odd)
+   {
+   height            :  160px               ;
+   margin-left       :    0px               ;
+   }
 
-  float: right;
-  border:5px solid blue;
-  height: 230px;
-width:200px;
-margin-left: 20px;
-border-style: inset;
-}
-#O{
-  float: left;
-  margin: 0 auto;
-  display: block;
-  height: 210px;
-width:200px;
+   body#belso div#lista div:nth-child(even)
+   {
+   height            :  160px               ;
+   margin-left       :   90px               ;
+   }
 
-    border: 7px darkblue solid;
-    
-   margin-right: 40px;
-    border-style: inset;
-}
-.H {
-margin-left: 380px;
-font-style: italic;
-margin-top: 0px;
-}
-a:link{
-  color:blueviolet;
-}
-a:active{
-  color:darkblue;
-}
+   body#belso div#lista div img
+   {
+   width             :  180px               ;
+   height            :  180px               ;
+   border-radius     :  8px                 ;
+   box-shadow        :  8px 8px 4px #1118   ;
+   }
+
+   body#belso div#lista div h2
+   {
+   margin-top        : -156px               ;
+   margin-left       :  212px               ;
+   }
+
+   body#belso div#lista div p
+   {
+   margin-left       :  220px               ;
+   text-align        :  justify             ;
+   } 

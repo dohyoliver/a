@@ -1,0 +1,130 @@
+
+/* * *  Külsõ keret formázása  * * */
+
+
+    body
+    {
+	font-family       :  Verdana             ;
+	text-align        :  center              ;
+    }
+
+    div#keret
+    {
+	width             : 1116px               ;
+    }
+
+    div#keret h1
+    {
+	margin-bottom     :  0                   ;
+	font-size         : 24px                 ;
+	color             : #AA0000              ;
+    }
+
+    div#keret h2
+    {
+	margin            :  8px 0 24px 0        ;
+	font-size         : 18px                 ;
+	color             : #550000              ;
+    }
+
+    a
+    {
+	text-decoration   :  none                ;
+    }
+
+    .ful
+    {
+	float             :  left                ;
+	width             :  120px               ;
+	height            :   36px               ;
+	margin            :  0 2px               ;
+	border-radius     :  16px 16px 0 0       ;
+	text-align        :  center              ;
+	line-height       :  36px                ;
+	vertical-align    :  middle              ;
+	font-weight       :  bold                ;
+	font-size         :  14px                ;
+	color             :  #FFF                ;
+    }
+
+    iframe
+    {
+	border-radius     :  0 0 0 32px          ;  webkit-border-radius: 0 0 0 32px ;  -moz-border-radius: 0 0 0 32px ;
+    }
+
+
+
+/* * *  Belsõ keret formázása  * * */
+
+
+    body#belso
+    {
+	margin            :  24px 36px 72px 36px ;
+	padding           :  0px                 ;
+	text-align        :  left                ;
+	font-size         :  12px                ;
+	color             :  #FFF                ;
+    }
+
+    body#belso h1
+    {
+	margin            :  24px                ;
+	text-align        :  center              ;
+	font-size         :  18px                ;
+    }
+
+    body#belso h2
+    {
+	text-align        :  center              ;
+	font-size         :  24px                ;
+    }
+
+
+
+/* * *  Belsõ keret: lista és képek-bekezdések formázása  * * */
+
+
+    body#belso div#lista ul
+    {
+	text-align        :  justify             ;
+	margin            :  24px 72px 48px 48px ;
+	font-weight       :  bold                ; 
+    }
+
+    body#belso div#lista ul li
+    {
+	margin-bottom     :    8px               ; 
+    }
+
+    body#belso div#lista div:nth-child(odd)
+    {
+	height            :  160px               ;
+	margin-left       :    0px               ;
+    }
+
+    body#belso div#lista div:nth-child(even)
+    {
+	height            :  160px               ;
+	margin-left       :   90px               ;
+    }
+
+    body#belso div#lista div img
+    {
+	width             :  180px               ;
+	height            :  180px               ;
+	border-radius     :  8px                 ;
+	box-shadow        :  8px 8px 4px #1118   ;
+    }
+
+    body#belso div#lista div h2
+    {
+	margin-top        : -156px               ;
+	margin-left       :  212px               ;
+    }
+
+    body#belso div#lista div p
+    {
+	margin-left       :  220px               ;
+	text-align        :  justify             ;
+    }
+
