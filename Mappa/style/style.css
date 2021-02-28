@@ -1,0 +1,125 @@
+
+body {
+    background-color:dimgrey;
+    
+}
+    
+    
+    h1 {
+    margin:auto;
+    display: block;
+    width:280px;
+    
+    }
+    #A {
+    height: 140px;
+    width:200px;
+    float: right;
+    border:5px solid maroon;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-style: inset;
+
+    
+    }
+    #B{
+      height: 140px;
+      width:200px;
+      float: left;
+      border:5px solid maroon;
+      margin-right: 20px;
+      margin-left: 15px;
+      border-style: inset;
+  
+
+    }
+    .B {
+    width: 960px;
+    background-color:floralwhite;
+    margin:  0 auto;
+    display:block;
+    padding:30px;
+    height: 940px;
+    
+    }
+    p {
+      text-align: justify;
+      margin-right: 30px;
+      
+     
+    }
+    h2 {
+      margin-right: 80%;
+      text-align: left;
+      border-color:maroon;
+      border-style: 2px solid;
+      text-transform:uppercase;
+      border-left: none;
+      border-width: 7px;
+      border-bottom: 2px solid maroon;
+      border-right: none;
+      color: maroon;
+     
+    }
+      
+    
+    
+    
+    
+    img {
+    margin-left: 90px;
+    box-shadow: 5px 5px black;
+    }
+   
+   
+    
+    
+    
+   
+   
+    a:active{
+      color:darkblue;
+    }
+a {
+    float:left;
+    margin-left: 430px;
+}
+a:hover {
+    background-color: maroon;
+}
+a:visited{
+
+    color: black;
+}
+.E{
+
+color:black;
+margin-left: 500px;
+float:right;
+}
+.R {
+
+  font-family: 'Courier New', Courier, monospace;
+}
+.T{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.I{
+  font-family: 'Liberation Mono Bold Italic';
+ 
+}
+@font-face {
+ font-family: 'Liberation Mono Bold Italic';
+ src: url('http://www.fontsaddict.com/fontface/liberation-mono-bold-italic.ttf');
+   
+}
+footer {
+text-align: center;
+margin-left: 300px;
+float:left;
+}
+video {
+  width:220px;
+   height:240px;
+   float:left;
+}
