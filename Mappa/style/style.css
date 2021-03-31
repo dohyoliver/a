@@ -81,7 +81,7 @@ body {
       color:darkblue;
     }
 a {
-    float:left;
+    float:right;
     margin-left: 430px;
 }
 a:hover {
