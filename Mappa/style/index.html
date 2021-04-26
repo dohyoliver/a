@@ -1,76 +1,69 @@
-  
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-	<title>Dohy_Olivér_main_page</title>
-	<meta charset="utf-8">
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body >
     
-
-    <h1 id="a" ></h1>
-    <script>
-  document.getElementById("a").innerHTML="Gyakorló feladat. Matematikai műveletek:";
-
-    </script>
-
-<div id="div1" style="display:block">
-        <img src="img/kek.png"  style="margin-left: 250px;">
-        <img src="img/piros.png"  style="margin-left: 10px;">
-    <br>
-        <img src="img/pluszjel.png" >
-        <img src="img/piros.png"  style="margin-left: 260px;">
-    <br>
-        <img src="img/vonal.png">
-    <br>
-    <img src="img/egyenlo.png" stily="margin-left:100px">
-        <img src="img/szurke.png"  style="margin-left: 150px;">
-        <img src="img/szurke.png"  style="margin-left: 5px;">
+    <div class="btn">
+        <input type="text" id="myText" value="Írj ide valamit!">
+        <button type="button" onclick="add()" onmouseover="hover1()" onmouseout="normal()" id="btnAdd">Hozzáad</button>
+        <button type="button" onclick="remove()" onmouseover="hover()" onmouseout="normal()" id="btnRem">Törlés</button>
         
-        <h1 id="b" ></h1>
-    <script>
-  document.getElementById("b").innerHTML="Egyenleg:";
+        <table id="list"></table>
+    </div>
 
-    </script>
-</div>
+        <button class="gomb">Change Color</button>
+        <script>
+            var button = document.querySelector('.gomb');
 
-<div id="div2" style="display:none">
-        <img src="img/kek.png"  style="margin-left: 250px;">
-        <h1  style="left: 295px; top: 70px; font-size: 45px; position: absolute;">7</h1>
-        <img src="img/piros.png"  style="margin-left: 10px;">
-        <h1  style="left: 410px; top: 70px; font-size: 45px; position: absolute;">9</h1>
-    <br>
-        <img src="img/pluszjel.png">
-        <img src="img/piros.png"  style="margin-left: 260px;">
-        <h1  style="left: 410px; top: 180px; font-size: 45px; position: absolute;">9</h1>
-    <br>
-        <img src="img/vonal.png">
-    <br>
-    <img src="img/egyenlo.png" stily="margin-left:100px">
-        <img src="img/szurke.png"  style="margin-left: 150px;">
-        <h1  style="left: 295px; top: 320px; font-size: 45px; position: absolute;">8</h1>
-        <img src="img/szurke.png"  style="margin-left: 5px;">
-        <h1  style="left: 410px; top: 320px; font-size: 45px; position: absolute;">8</h1>
-        <h1 >Egyenleg:88</h1>
-</div>
+            button.onclick = function(){
+                var red = Math.floor(Math.random() * 256);
+                var blue = Math.floor(Math.random() * 256);
+                var green = Math.floor(Math.random() * 256);
 
-<br>
-<br>
-<br>
+                this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+            }
+        </script>
+        <script>
+            let index=0;
+         function add() {
+            let newHeader = document.getElementById("list").insertRow(index);
+            index++;
+            let newCell = newHeader.insertCell(0);
+            let newText = document.createTextNode(index);
+            newCell.appendChild(newText);
+            let newCell1 = newHeader.insertCell(1);
+            newCell1.innerHTML = document.getElementById("myText").value;
+            if (index > 0 ) {
+                document.getElementById("list");
+                document.getElementById("list");
+            }
+        }   
 
-<button onClick="reloadPage()" >Alap</button>
-<button onClick="replace()" >Megoldás</button>
+        function remove() {
+            if ( index > 0) {
+                let mainDiv = document.querySelector("tbody");
+            let lastChild = mainDiv.lastChild;
+            if (index < 1.1 ) {
+                document.getElementById("list");
+                document.getElementById("list");
+            }
+            index--;
+            mainDiv.deleteRow(index);
+            }
+            
+        }
+        </script>
+</body>
+</html>
 
 
-<script> 
-function reloadPage() { 
-    location.reload(); 
-} 
-function replace() {
-    document.getElementById("div1").style.display="none"; 
-    document.getElementById("div2").style.display="block"; 
-} 
-</script>
+
+   
 </body>
 </html>
