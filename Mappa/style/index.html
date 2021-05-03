@@ -6,64 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style> #ketto tr        { background-color: #DDD;             text-align:right;   }
+        #ketto tr.felso  { background-color: #444; color:#FFF;                     }
+    </style>
 </head>
 <body >
-    
-    <div class="btn">
-        <input type="text" id="myText" value="Írj ide valamit!">
-        <button type="button" onclick="add()" onmouseover="hover1()" onmouseout="normal()" id="btnAdd">Hozzáad</button>
-        <button type="button" onclick="remove()" onmouseover="hover()" onmouseout="normal()" id="btnRem">Törlés</button>
-        
-        <table id="list"></table>
-    </div>
-
-        <button class="gomb">Change Color</button>
-        <script>
-            var button = document.querySelector('.gomb');
-
-            button.onclick = function(){
-                var red = Math.floor(Math.random() * 256);
-                var blue = Math.floor(Math.random() * 256);
-                var green = Math.floor(Math.random() * 256);
-
-                this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
-            }
-        </script>
-        <script>
-            let index=0;
-         function add() {
-            let newHeader = document.getElementById("list").insertRow(index);
-            index++;
-            let newCell = newHeader.insertCell(0);
-            let newText = document.createTextNode(index);
-            newCell.appendChild(newText);
-            let newCell1 = newHeader.insertCell(1);
-            newCell1.innerHTML = document.getElementById("myText").value;
-            if (index > 0 ) {
-                document.getElementById("list");
-                document.getElementById("list");
-            }
-        }   
-
-        function remove() {
-            if ( index > 0) {
-                let mainDiv = document.querySelector("tbody");
-            let lastChild = mainDiv.lastChild;
-            if (index < 1.1 ) {
-                document.getElementById("list");
-                document.getElementById("list");
-            }
-            index--;
-            mainDiv.deleteRow(index);
-            }
-            
-        }
-        </script>
-</body>
-</html>
-
-
-
    
+
+
+    <script language="javascript">
+
+document.write( "<table id='ketto' align=center cellpadding=4 width=240>" )
+
+document.write( "<tr class='felso'><th> n! </th><th> eredmény </th></tr>" )
+
+
+        function faktor (n)
+        {
+            return n == 0 ? 1 : n * faktor(n - 1);
+        }
+
+        for (var i=0; i<21; document.write(i + '! = ' + faktor(i++) + '<br>'))
+            ;
+            
+            
+
+    
+ document.write( "<tr class='felso'><td></td><td></td></tr>" )
+
+    document.write( "</table>" )
+
+        </script>
+
+
+
+
+
+
+
 </body>
-</html>
+    </html>
+    
