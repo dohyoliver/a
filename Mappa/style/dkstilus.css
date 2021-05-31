@@ -1,0 +1,70 @@
+﻿body {
+	font-size: 11pt;
+	background-image: url(img/bg.png);
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana;
+	color: darkblue;
+}
+
+.A {
+	display: grid;
+	grid-template-columns: repeat(3, 310px);
+	width: 930px;
+	background-color: lightblue;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 5px;
+}
+.C {
+	font-size: small;
+	font-style: italic;
+}
+.G {
+	font-weight: bold;
+}
+
+hr {
+	border: none;
+	background-color: darkred;
+	width: 80%;
+	height: 3px;
+	grid-area: 3/1/4/4;
+}
+
+h1, h2 {
+	padding: 5px;
+	transform: translate(0px,-20px);
+	color: darkred;
+}
+h2 {
+	font-size: 17px;
+}
+
+.B {
+	grid-area: 1/1/2/4;
+	margin: 0 auto 0 auto;
+	text-align: left;
+	
+}
+
+.D{
+    float: left;
+    padding: 0px;
+   	
+}
+
+.E {
+	width: 240px;
+	margin-left: 30px;
+}
+
+a:link {
+	color: darkred;
+}
+
+.F {
+    clear: both;
+    
+}
