@@ -1,76 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dobókocka</title>
-    <link rel="stylesheet" href="dkstilus.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="main.js">
 </head>
 
 <body>
-    <div class="A">
-        <div class="B">
-            <h1>Dobókocka</h1>
-            <p class="C">A <span class="G">dobókocka</span> vagy <span class="dagi">dobótest</span> egy
-                véletlenszám-generátorként használt poliéder. A dobókocka lapjait megkülönböztetik egymástól, például
-                számokkal, színekkel vagy mintával. Olyan társasjátékok gyakori tartozéka, amelyekben a véletlennek
-                fontos szerepe van: a dobókocka kellő erejű eldobása után ideális esetben mindegyik lap azonos
-                valószínűséggel kerül felülre.
-            </p>
-            <p class="C">A dobótestek legismertebb és leggyakoribb fajtája a kocka. A hagyományos dobókocka lapjain
-                1-től 6-ig pöttyök szerepelnek úgy, hogy a szemben lévő lapokon lévő pöttyök számainak összege mindig
-                hét.
-            </p>
-            <p class="C">A szerepjátékokban ismertek például a 4 (tetraéder), 8 (oktaéder), 10 (pentagonális
-                antidipiramis), 12 (dodekaéder), 20 (ikozaéder), 30 (rombtriakontaéder), 100 oldalú dobótestek is. A
-                tetra-, hexa-, dodeka- és ikozaéderek szabályos testek.
-            </p>
+    <nav class="sidebar navbar navbar-expand-lg navbar-dark bg-dark d-lg-block">
+        <h1 class="navbar-brand">
+            FORMULA ONE
+        </h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-column">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#home">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#history">Történet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#records">"Leg"-ek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#avgspeed">Átlagsebességek</a>
+                </li>
+            </ul>
         </div>
-        <div class="D">
-            <img src="img/kockajatek.jpg" class="E" title="Kockajáték" alt="">
-            <h2>Kockajáték</h2>
-            <p>Az ókori Európában közkedvelt jóslási forma és szerencsejáték volt a kockavetés. Ezt két kockával, egy
-                pohár segítségével játszották, és az eredményre fogadást kötöttek, vagy misztikus jelentést
-                tulajdonítottak neki.
-                Ebből alakult ki a napjainkban a kaszinókban játszott kockajáték és a kockapóker, a póker egyszerűbb
-                változata.
-            </p>
-            <img src="img/monopoly.jpg" class="E" title="Monopoly" alt="">
-            <h2>Monopoly</h2>
-            <p>A Monopoly társasjáték; elődjét Charles Darrow találta fel 1935-ben. Az eredeti játéktábla, amelyet az
-                USA-ban és a világbajnokságon is használnak, Atlantic City várost ábrázolja. A játékot 37 nyelven
-                jelentették meg, többek között magyarul is, és több mint 250 millió példányban került el 103 országba.A
-                játék lényege területeket és épületeket venni, eladni vagy bérelni egészen addig, […]
-            </p>
-        </div>
-        <div class="D">
-            <img src="img/catan.jpg" class="E" title="Catan telepesei" alt="">
-            <h2>Catan telepesei</h2>
-            <p>A Catan telepesei egy többszemélyes táblás stratégiai játék, melyet Klaus Teuber talált ki. A játékot először Németországban a Franckh-Kosmos Verlags-GmbH & Co. adta ki 1995-ben Die Siedler von Catan néven. A Catan telepesei világszerte elterjedt, már huszonöt nyelvre lefordították. 1995-ben megszerezte Németországban a Spiel des Jahres (Az év játéka) címet. 1996-ban az Egyesült Államokban […]
-            </p>
-            <img src="img/gazdalkodj.jpg" class="E" title="Gazdálkodj okosan!" alt="">
-            <h2>Gazdálkodj okosan!</h2>
-            <p>A Gazdálkodj okosan! 1966-ban készült. A tervezés és kivitelezés feladatát a Közgazdasági és Jogi Könyvkiadó Minerva osztálya kapta meg. Jelentős eltérés a Monopolytól, hogy míg a Monopolyban azzal tehetünk szert előnyre, hogy a többi játékost […]
-            </p>
-        </div>
-        <div class="D">
-            <img src="img/kinevet.jpg" class="E" title="Ki nevet a végén?" alt="">
-            <h2>Ki nevet a végén?</h2>
-            <p>A Ki nevet a végén? (a 60-as és a 70-es években Kocog és kidob néven is forgalmazták Magyarországon) egy táblás, kockadobásos társasjáték, elsősorban kisebb gyerekek részére, azóta számtalan különféle kiadásban és néven megjelent, gyakran Ludo, vagy egyéb fantázianeveken. A játék legismertebb neve, a "Ki nevet a végén?" egy szólásra utal: "Az nevet legjobban, aki utoljára nevet." […]
-            </p>
-            <img src="img/riziko.jpg" class="E" title="Rizikó" alt="">
-            <h2>Rizikó</h2>
-            <p>A Rizikó társasjáték, klasszikus stratégiai társasjátékban a 2-6 játékos titkos katonai küldetést próbál végrehajtani, melynek célja a területek elfoglalása. A játékterep hat kontinensre, azon belül 42 körzetre van felosztva, amelyek közül néhány stratégiai előretolt állás. A területek védelme csak figyelmes tervezés után lehet sikeres. A súlyos vereségek fontos körzetek, vagy akár kontinensek elvesztését jelentik. A […]
-            </p>
-        </div>
-        <hr>
-        <div class="F">
-            <h2>Forrás:</h2>
-            <a href="http://www.gyerekjatekokrol.hu/cimke/dobokocka/ ">http://www.gyerekjatekokrol.hu/cimke/dobokocka/ </a>
-        </div>
-    </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="home" class="section-100 bg-image">
+            <h1 class="text-center">Érdekességek a Forma-1 világából</h1>
+        </section>
+
+        <section id="history" class="section-100, bg-image p-2">
+            <h1 class="text-center py-3">Történet</h1>
+            <h2 > A kezdetek:</h2>
+            <p>A Forma-1 gyökerei egészen a 20. század első éveiig vezethetők vissza, az autóversenyzés bölcsőjébe, Franciaországba. Az első nagydíjat, grand prix-t 1906-ban rendezték, a Renault-t vezető győztes pedig nem volt más, mint a magyar Szisz Ferenc.</p>
+            
+            <h3> A Forma-1 születése:</h3>
+            <p> Már a 30-as években felmerült a grand prix-k világbajnokságba való szervezése, de a második világháború közbeszólt, így az európai autóversenyzés csak a 40-es évek végén éledt újra. Az első bajnoki idényt pedig 1950-ben rendezték, a legelső futam a silverstone-i Brit Nagydíj volt.</p>
+            
+            <h3>  A Forma-1 aranykora:</h3>
+            <p> Az F1-be 1977-ben belépő Renault hozta a sportág következő nagy újítását. A francia gyártó turbómotorjai kezdetben ugyan siralmasan megbízhatatlanok voltak, de a technológia elterjedt és egy évtizedig uralta a száguldó cirkuszt, az erőforrások az egészen elképesztő, 1000 lóerő feletti teljesítményt is hozták. Manapság talán az 1980-as évekre tekintenek legtöbben aranykorként, amikor Nelson Piquet, Alain Prost, Nigel Mansell, Ayrton Senna küzdött a Brabham, a McLaren, a Lotus és a Williams autóiban ülve.</p>
+            
+            <h3> A '90-es évek:</h3>
+            <p> A Forma-1-ben tulajdonképpen csak Mansell '92-es révbe érése, Prost '93-as visszavonulása és Senna '94-es halála zárta le végleg a 80-as éveket, ezután emelkedtek fel a korszak új sztárjai.</p>
+            
+            <h3> Napjaink:</h3>
+            <p> A Ferrari és Schumacher totálisan uralta a 2000-es évtized elejét, öt éven keresztül minden bajnoki címet begyűjtött. A Renault és Fernando Alonso 2005-2006-ban törte meg a sorozatot, a főszerep ezután már a következő generációé, napjaink sztárjaié lett.</p>
+        </section>
+
+        <section id="records">
+            <div class="row mx-0">
+                <div class="bg-black col-sm-12 col-md-6 p-3">
+                    <h3 class="bg-dark p-2 col-sm-12 text-center">
+                        Legtöbb nagydíj
+                    </h3>
+                    <div class="row">
+                        <img class="col-sm-4" src="img/rubens_barrichello.jpg" alt="Rubens Barrichello">
+                        <div class="col-sm-8">
+                            <ol>
+                              <div class="A">  <li>Rubens Barrichello (326)</li></div>
+                                <li>Kimi Räikkönen (315)</li>
+                                <li>Fernando Alonso (314)</li>
+                                <li>Jenson Button (309)</li>
+                                <li>Michael Schumacher (308)</li>
+                                <li>Felipe Massa (272)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-black col-sm-12 col-md-6 p-3">
+                    <h3 class="bg-dark p-2 col-sm-12 text-center">
+                        Legtöbb megnyert futam
+                    </h3>
+                    <div class="row">
+                        <img class="col-sm-4" src="img/michael_schumacher.jpg" alt="Michael Schumacher">
+                        <div class="col-sm-8">
+                            <ol>
+                                <div class="A">    <li>Michael Schumacher (91)</li></div>
+                                <li>Lewis Hamilton (84)</li>
+                                <li>Sebastian Vettel (53)</li>
+                                <li>Alain Prost (51)</li>
+                                <li>Ayrton Senna (41)</li>
+                                <li>Fernando Alonso (32)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-black col-sm-12 col-md-6 p-3">
+                    <h3 class="bg-dark p-2 col-sm-12 text-center">
+                        Bajnoki címek
+                    </h3>
+                    <div class="row">
+                        <img class="col-sm-4" src="img/juan_manuel-fangio.jpg" alt="Juan Manuel Fangio">
+                        <div class="col-sm-8">
+                            <ol>
+                                <li>Michael Schumacher (7)</li>
+                                <li>Lewis Hamilton (6)</li>
+                                <div class="A">     <li>Juan Manuel Fangio (5)</li></div>
+                                <li>
+                                    Alain Prost (4)
+                                    <br>
+                                    Sebastian Vettel (4)
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-black col-sm-12 col-md-6 p-3">
+                    <h3 class="bg-dark p-2 col-sm-12 text-center">
+                        Csapat bajnoki címek
+                    </h3>
+                    <div class="row">
+                        <img class="col-sm-4" src="img/ferrari.jpg" alt="Ferrari">
+                        <div class="col-sm-8">
+                            <ol>
+                                <div class="A">     <li>Ferrari (16)</li> </div>
+                                <li>Williams (9)</li>
+                                <li>McLaren (8)</li>
+                                <li>Lotus (7)</li>
+                                <li>Mercedes (6)</li>
+                                <li>Red Bull (4)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legfiatalabb versenyző -->
+                <div class="bg-black col-sm-12 col-md-4 p-3és text-center">
+                    <h3 class="bg-dark p-2 w-100">legfiatalabb versenyző</h3>
+<img class="w-100" src="img/max_verstappen.jpg  ">
+<p> Max Verstappen 2015-ben 17 éves és 166 napos korában indult az Osztrák nagydíjon.</p>
+
+
+                </div>
+
+                <!-- Legidősebb versenyző -->
+                <div class="bg-black col-sm-12 col-md-4 p-3és text-center">
+                    <h3 class="bg-dark p-2 w-100">Legidősebb versenyző</h3>
+                <img class="w-100" src="img/louis_chiron.jpg">
+                  <p>Louis Chiron 58 évesen és 288 naposan állt rajthoz 1958-ban Monacoban.</p>  
+                </div>
+                  <!-- Legtöbb Grand Prix -->
+                  <div class="bg-black col-sm-12 col-md-4 p-3és text-center">   
+<h3 class="bg-dark p-2 w-100">Legtöbb Grand Prix</h3>
+<img  class="w-100" src="img/monza_info.jpg">
+<p>1950 óta a legtöbb versenyt az olaszországi Monzában rendezték.</p>
+                  </div>
+        </section>
+
+        <section id="avgspeed" class="section-100 bg-image p-2">
+            <h2 class="text-center py-3">Átlagsebesség számítás</h2>
+            <div class="row mx-0">
+                <div class=".d-none .d-md-block col-md-5">
+                    <img id="circuitimage" class="w-100">
+                </div>
+
+                <form class="col-md-5 offset-md-1">
+                    <div class="form-group">
+                        <label for="circuit">Pálya</label>
+                        <select class="form-control" id="circuit" oninput="calculate()">
+                            <option value=""></option>
+                            <option value="HUN">Hungaroring</option>
+                            <option value="MON">Monaco</option>
+                            <option value="BEL">Spa-Francorchamps</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="laptime">1 kör ideje (másodpercben)</label>
+                        <input type="text" class="form-control" id="laptime" placeholder="pl.: 105.954" oninput="calculate()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="averagespeed">Átlagsebesség</label>
+                        <input type="text" class="form-control" id="averagespeed" readonly>
+                    </div>
+                </form>
+
+                <script>
+                    
+                </script>
+
+            </div>
+
+        </section>
+    </main>
+
+    <audio id="f1sound">
+        <source src="fromula-one-car-sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer class="text-right p-2">
+        Források: http://formula.uw.hu/f1tortenet.html, https://en.wikipedia.org/wiki/List_of_Formula_One_driver_records
+    </footer>
+
+
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 </body>
 
 </html>
